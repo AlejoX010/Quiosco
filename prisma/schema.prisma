@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Aqui empieza el modelado del proyecto para esto es que se utiliza prisma para facilitarnos y no utilizar tanto codigo sql
+
+//@IMPORTANTE cada vez que se hacen las modificaciones en este schema para modo que se vea reflejado el modelaje en la base de datos sql debemos de hacer una migracion, esta la logramos con el comando "npx prisma migrate dev", tambien cabe recalcar que este comando debe de estar dentro de la carpeta donde se este desarrollando el archivo.
+
+model Producto {
+  id Int @id @default(autoincrement())
+  nombre String
+  precio Float
+  imagen String 
+  //Asi se hace la relacion de uno a muchos ya que un producto tiene una categoria
+  categoria Categoria @relation(fields: [categoriaId], references: [id])
+  categoriaId Int
+}
+
+model Categoria {
+  id Int @id @default(autoincrement())
+  nombre String
+  icono String
+  //Esta parte es necesaria para poder relacionar de uno a muchos ya que una categoria tiene muchos productos
+  productos Producto[]
+}
+
+model Order{
+  id Int @id @default(autoincrement())
+  nombre String
+  fecha String
+  total Float
+  pedido Json
+  estado Boolean @default(false)
+}
