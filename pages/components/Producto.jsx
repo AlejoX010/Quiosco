@@ -7,7 +7,7 @@ const Producto = ({producto}) => {
     return (
         <>
             <div className='border p-3'>
-                <Image width={400} height={500} src={`/assets/img/${producto.imagen}.jpg`} alt={`Imagen producto ${producto.nombre}`} />
+                <Image priority width={400} height={500} src={`/assets/img/${producto.imagen}.jpg`} alt={`Imagen producto ${producto.nombre}`} />
                 <div className="p-5">
                     <h3 className="text-2xl font-bold">{producto.nombre}</h3>
                     <p className="mt-5 font-black text-4xl text-yellow-400">{formatearDinero(producto.precio)}</p>

@@ -17,6 +17,7 @@ const Carrito = () => {
       {pedido?.length === 0 ? (
         <div className="flex flex-col justify-center mt-20">
           <Image
+          priority
             width={200}
             height={200}
             src={`/assets/img/shoppingcart1_114878.svg`}

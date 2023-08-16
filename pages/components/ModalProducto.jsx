@@ -28,6 +28,7 @@ const ModalProducto = () => {
         <Image
           width={300}
           height={400}
+          priority
           src={`/assets/img/${producto.imagen}.jpg`}
           alt="producto cafeteria"
         />
