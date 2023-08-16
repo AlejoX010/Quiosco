@@ -1,4 +1,4 @@
-import Layout from "./layout/Layout";
+import Layout from "../layout/Layout";
 import useQuiosco from "../hooks/useQuiosco";
 import Image from "next/image";
 import { formatearDinero } from "../helpers";

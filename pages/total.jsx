@@ -1,4 +1,4 @@
-import Layout from "./layout/Layout";
+import Layout from "../layout/Layout";
 import { useCallback, useEffect } from "react";
 import useQuiosco from "../hooks/useQuiosco";
 import { formatearDinero } from "../helpers";

@@ -1,7 +1,7 @@
-import Layout from "./layout/Layout"
+import Layout from "../layout/Layout"
 //import { PrismaClient } from '@prisma/client'
 import useQuiosco from "../hooks/useQuiosco"
-import Producto from "./components/Producto"
+import Producto from "../components/Producto"
 
 
 export default function Home({categorias}) {

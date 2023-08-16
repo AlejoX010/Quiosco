@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Sidebard from '../components/Sidebard';
 import Modal from 'react-modal'//El modal debe de instalarse con la dependencia de npm i react-modal
 import { ToastContainer } from 'react-toastify';//El toastify debe de instalarse con la dependencia de npm i react-toastify
-import useQuiosco from '../../hooks/useQuiosco';
+import useQuiosco from '../hooks/useQuiosco';
 import ModalProducto from '../components/ModalProducto';
 import Pasos from '../components/Pasos';
 

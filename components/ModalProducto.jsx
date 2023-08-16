@@ -1,6 +1,6 @@
 import Image from "next/image";
-import useQuiosco from "../../hooks/useQuiosco";
-import { formatearDinero } from "../../helpers";
+import useQuiosco from "../hooks/useQuiosco";
+import { formatearDinero } from "../helpers";
 import { useState, useEffect } from "react";
 
 const ModalProducto = () => {

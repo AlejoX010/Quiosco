@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { formatearDinero } from "../../helpers";
+import { formatearDinero } from "../helpers";
 import axios from "axios";
 import {toast} from 'react-toastify'
 

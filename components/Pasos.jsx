@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import useQuiosco from "../../hooks/useQuiosco";
+import useQuiosco from "../hooks/useQuiosco";
 import { toast } from "react-toastify";
 
 
